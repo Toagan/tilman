@@ -54,9 +54,13 @@
   ul.plain li { margin-bottom: 1rem; }
   .content { margin-top: 3rem; }
   @media (min-width: 900px) {
-    .wrap { display: grid; grid-template-columns: 19rem minmax(0, 40rem); gap: clamp(3rem, 6vw, 6rem); justify-content: center; }
+    .wrap { max-width: 84rem; display: grid; grid-template-columns: minmax(17rem, 22rem) minmax(0, 48rem); gap: clamp(3rem, 7vw, 8rem); justify-content: center; padding-left: clamp(1.5rem, 4vw, 4rem); padding-right: clamp(1.5rem, 4vw, 4rem); }
     .side { position: sticky; top: 3rem; align-self: start; }
     .content { margin-top: 0.4rem; }
+  }
+  @media (min-width: 1600px) {
+    body { font-size: 1.3rem; }
+    .side img { width: 140px; height: 140px; }
   }
 </style>
 </head>
