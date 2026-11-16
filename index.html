@@ -4,25 +4,159 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tilman Schepke</title>
+<meta name="description" content="Tilman Schepke. Co-founder and CRO of FinancialFilings, previously AWS. I sell technical products, and I build the tools I sell with.">
 <meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#fbfaf7; --text:#1b1a17; --muted:#6b675f; --accent:#1f5f4a; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141412; --text:#ecebe6; --muted:#9a968c; --accent:#7cc4a6; } }
-  body { margin:0; background:var(--bg); color:var(--text); font:1.1rem/1.6 Georgia, serif; }
-  main { max-width:34rem; margin:0 auto; padding:4rem 1.25rem; }
-  img { width:88px; height:88px; border-radius:50%; object-fit:cover; }
-  h1 { font-weight:500; margin:1rem 0 0.4rem; }
-  p { margin:0 0 1rem; } .m { color:var(--muted); font:0.9rem/1.6 system-ui, sans-serif; }
-  a { color:var(--accent); }
+  :root {
+    --bg: #fbfaf7; --text: #1b1a17; --muted: #6b675f; --rule: #e4e0d7; --accent: #1f5f4a;
+    --serif: "Newsreader", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
+    --space-section: clamp(2.75rem, 2rem + 3vw, 4.5rem);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141412; --text: #ecebe6; --muted: #9a968c; --rule: #2b2a26; --accent: #7cc4a6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--serif);
+    font-size: clamp(1.06rem, 1rem + 0.3vw, 1.2rem); line-height: 1.6; }
+  main { max-width: 36rem; margin: 0 auto; padding: clamp(2.5rem, 2rem + 5vw, 6rem) 1.25rem 4rem; }
+  .hero { display: flex; gap: 1.1rem; align-items: center; margin-bottom: 1rem; }
+  .hero img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; flex: none; }
+  h1 { font-size: clamp(1.9rem, 1.6rem + 2vw, 2.6rem); font-weight: 500; line-height: 1.1; margin: 0; }
+  h2 { font-family: var(--sans); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+  section { margin-top: var(--space-section); }
+  p { margin: 0 0 1rem; }
+  .lede { font-size: 1.2em; font-style: italic; margin: 0 0 1.25rem; }
+  .meta { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin: 0; }
+  .meta b { font-weight: 500; color: var(--text); }
+  .numbers { display: grid; gap: 1.4rem; margin: 0; padding: 0; list-style: none; }
+  .numbers li { border-top: 1px solid var(--rule); padding-top: 0.8rem; }
+  .numbers strong { display: block; font-size: 1.8em; font-weight: 500; line-height: 1.1; }
+  .numbers span { color: var(--muted); font-size: 0.95em; }
+  .path { list-style: none; margin: 0; padding: 0 0 0 1.1rem; border-left: 2px solid var(--rule); }
+  .path li { position: relative; margin-bottom: 1.3rem; }
+  .path li::before { content: ""; position: absolute; left: -1.53rem; top: 0.55rem; width: 0.7rem; height: 0.7rem;
+    border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+  .path li.now::before { background: var(--accent); }
+  .when { display: block; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+  .path b { font-weight: 500; }
+  .fit dt { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; color: var(--accent); margin-top: 1rem; }
+  .fit dd { margin: 0.2rem 0 0; }
+  .fit { margin: 0; }
+  ul.plain { margin: 0; padding: 0; list-style: none; }
+  ul.plain li { margin-bottom: 1rem; }
+  ul.plain b { font-weight: 500; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .contact { font-family: var(--sans); font-size: 0.95rem; }
+  .contact a { margin-right: 1.25rem; display: inline-block; margin-bottom: 0.4rem; }
+  @media (min-width: 640px) { .numbers { grid-template-columns: repeat(3, 1fr); } }
 </style>
 </head>
 <body>
 <main>
-  <img src="tilman-portrait.jpg" alt="Tilman Schepke">
-  <h1>Tilman Schepke</h1>
-  <p><em>I sell technical products, and I build the tools I sell with.</em></p>
-  <p class="m">Co-founder and CRO, FinancialFilings. Before: Amazon Web Services, Munich and London.<br>EU citizen, open to relocating to Dublin.</p>
-  <p class="m"><a href="mailto:tilschego@gmail.com">tilschego@gmail.com</a> &nbsp; <a href="https://www.linkedin.com/in/tilman-s-68b436193">LinkedIn</a></p>
+  <header>
+    <div class="hero">
+      <img src="tilman-portrait.jpg" alt="Tilman Schepke" width="84" height="84">
+      <h1>Tilman Schepke</h1>
+    </div>
+    <p class="lede">I sell technical products, and I build the tools I sell with.</p>
+    <p class="meta"><b>Now:</b> Co-founder and CRO, FinancialFilings (a16z scout funded, Google for Startups)<br>
+      <b>Before:</b> Amazon Web Services, Munich and London<br>
+      EU citizen, open to relocating to Dublin<br>
+      German (native), English (fluent), French (B1)</p>
+  </header>
+
+  <section aria-labelledby="numbers">
+    <h2 id="numbers">In numbers</h2>
+    <ul class="numbers">
+      <li><strong>$0 to $1.6M</strong><span>ARR at FinancialFilings since 2025, team grown to six</span></li>
+      <li><strong>140%</strong><span>average quarterly target at AWS, above target every quarter</span></li>
+      <li><strong>$1B+</strong><span>AUM of the hedge funds I sell to</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="fit">
+    <h2 id="fit">Why I fit the Enterprise Account Associate role</h2>
+    <dl class="fit">
+      <dt>Partner with Account Directors on account strategy, multi-threading and deal progression</dt>
+      <dd>Did exactly this at AWS: owned a book of 100 accounts under AWS's leading Account Executives, ran account strategy and multi-threaded buying groups.</dd>
+      <dt>Targeted outbound into priority accounts</dt>
+      <dd>Above target every quarter at AWS, 140% average, through cold calling, LinkedIn, email and events; most meetings booked in the team.</dd>
+      <dt>Discovery, stakeholder mapping, enterprise readiness</dt>
+      <dd>Ran them for every AWS account, and for every FinancialFilings deal from first call to signature.</dd>
+      <dt>Turn product usage, pilots and inbound into qualified opportunities</dt>
+      <dd>At FinancialFilings I qualify 1,100+ sign-ups and 300+ AI connector installs a month into pilots and enterprise licences.</dd>
+      <dt>Build AI-enabled GTM workflows</dt>
+      <dd>I built our outbound and inbound qualification on LLM APIs, Clay and HubSpot, and a Bedrock pitch generator at AWS that saved 80+ hours a month.</dd>
+      <dt>Full-cycle closing, regulated industries, technical buyers</dt>
+      <dd>Since 2025, closing data licences of up to about $500K with hedge funds, fintechs and AI platforms: quant, data, legal and procurement at the table, security reviews and DDQs included.</dd>
+      <dt>German and English, EU citizen</dt>
+      <dd>German native, English fluent, French B1. Open to relocating to Dublin, no visa needed.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="path">
+    <h2 id="path">My path</h2>
+    <ol class="path">
+      <li><span class="when">Bachelor · Groningen and Sydney</span>
+        <b>Honours BSc Business and Economics, top 5%,</b> with a finance minor in Sydney. From 2020 to 2023 I ran a hoodie business alongside, selling 500+ a year to students, and from 2022 to 2023 I led student AI safety organisations in Groningen and Sydney.</li>
+      <li><span class="when">Master · Rotterdam and Stockholm</span>
+        <b>MSc Management (CEMS), top 5% of class,</b> with an exchange at Stockholm School of Economics. Completed BlueDot AI Safety Fundamentals (technical and governance tracks).</li>
+      <li><span class="when">Jun to Sep 2024 · London</span>
+        <b>AWS Business Development Intern.</b> Built a pitch generator on Amazon Bedrock that saved the sales team 80+ hours a month; ranked 2nd of 68 interns.</li>
+      <li><span class="when">2024 to 2026 · Munich</span>
+        <b>AWS Demand Generation, then interim Associate Account Executive.</b> Beat target every quarter at a 140% average, booked the most meetings in the team, then owned a book of 100 accounts under AWS's leading Account Executives. Ran GenAI hackathons for 100+ enterprise attendees.</li>
+      <li><span class="when">2025</span>
+        <b>Perplexity Business Fellow and founder of BlueReach,</b> an outbound agency for 10+ clients in Germany and the US, run alongside AWS to deepen my technical skills.</li>
+      <li class="now"><span class="when">2025 to present · Remote</span>
+        <b>Co-founder and CRO, FinancialFilings.</b> A financial data provider to hedge funds, AI platforms and universities. Took ARR from $0 to $1.6M and hired four to grow the team to six.</li>
+      <li><span class="when">Next · Dublin</span>
+        <b>Helping companies across EMEA get real value from OpenAI.</b></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="mistake">
+    <h2 id="mistake">The mistake that taught me the most</h2>
+    <p>In September, four large banks turned down our outreach. I assumed the copy was wrong. Before rewriting it, I checked who had actually received the emails: a private wealth adviser, a head of media relations, someone on a regulation desk. None of them could buy or use a data licence.</p>
+    <p>I ran the same check across everything we had sent: nine job functions, 2,304 contacts, not one positive reply. It was a targeting failure, and I had been about to fix the wrong thing.</p>
+    <p>I added a gate on job function before any list goes out. A wrong-person email is worse than no email, because it burns an account you wanted to approach properly. That is why I qualify hard before anything reaches a senior seller.</p>
+  </section>
+
+  <section aria-labelledby="sell">
+    <h2 id="sell">How I sell</h2>
+    <ul class="plain">
+      <li><b>Enterprise deals.</b> Multi-year licences of up to about $500K, including $120K in year one for 150 named AI seats at a multi-billion credit fund, in six-month cycles across quant, data, legal and procurement teams.</li>
+      <li><b>Every channel.</b> Cold calling, LinkedIn, email, events and inbound. I decide which segments to target with which offer, set pricing and feed what buyers ask for back into the product.</li>
+      <li><b>Self-serve to enterprise.</b> 1,100+ sign-ups and 300+ installs of our AI connector a month (Oct 2026), qualified into pilots and licences. I lead the security reviews and due diligence questionnaires.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="ai">
+    <h2 id="ai">What I build with AI</h2>
+    <ul class="plain">
+      <li><b>AI outbound and inbound qualification</b> on LLM APIs, Clay and HubSpot: agents score accounts and map buying committees before anyone writes a word.</li>
+      <li><b>A pitch generator for the AWS sales floor</b> on Amazon Bedrock, saving 80+ hours a month.</li>
+      <li><b>Daily work with coding agents,</b> MCP and GPTs; AWS certified Solutions Architect and AI Practitioner.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="why">
+    <h2 id="why">Why OpenAI</h2>
+    <p>Leading student AI safety organisations left me with one question: how do we make the arrival of advanced AI go well for as many people as possible?</p>
+    <p>A large part of the answer is decided inside companies, by whether people there get real value from AI and use it responsibly. That is a go-to-market problem, and it is the part I can work on.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p class="contact">
+      <a href="mailto:tilschego@gmail.com">tilschego@gmail.com</a>
+      <a href="https://www.linkedin.com/in/tilman-s-68b436193">LinkedIn</a>
+    </p>
+  </section>
 </main>
 </body>
 </html>
